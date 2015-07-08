@@ -1,0 +1,190 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    background-color: #FEFEFE;
+}
+
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.theme-color {
+    color: #9D5D5F;
+}
+
+#page-container {
+    background-color: #FEFEFE;
+}
+
+#logo {
+    max-height: 200px;
+    max-width: 100%;
+    margin-bottom: -75px;
+    position: relative;
+    left: -35px;
+    z-index: 1000;
+}
+
+#home-title {
+    font-family: "Lobster Two", "Alex Brush", cursive;
+    font-size: 600%;
+    /*color: #B15E5E;*/
+    /*color: #B67373;*/
+    color: #9D5E5E;
+    line-height: 0.5;
+    margin: 40px auto 30px;
+}
+
+#navbar-container > div {
+    z-index: 9999;
+}
+
+#navbar {
+    margin-left: 60px;
+    /*margin-bottom: 25px;*/
+    margin-bottom: 60px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #444444;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar ul li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 25px;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#navbar ul li:last-child {
+    border-right: none;
+    margin-right: none;
+}
+
+#main-content {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#home-pics {
+    margin-bottom: 30px;
+}
+
+.home-pic {
+    max-height: 450px;
+    overflow-y: hidden;
+    padding: 0 5px;
+}
+
+.home-pic > img {
+    position: relative;
+    width: 100%;
+    height: inherit;
+}
+
+#home-prestations {
+    margin-top: 30px;
+    width: 100%;
+    font-weight: 400;
+}
+
+#home-prestations td {
+    height: 45px;
+    width: 50%;
+    font-size: 20px;
+    line-height: 1;
+    vertical-align: middle;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#home-prestations td:last-child {
+    border-right: none;
+}
+
+#home-devis {
+    margin-top: 50px;
+    font-size: 33px;
+    color: rgb(195, 107, 110);
+}
+
+#footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.home-details-border {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 20px;
+}
+
+.home-details h3 {
+    font-family: "Raleway", sans-serif;
+    color: #282828;
+}
+
+.home-details p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+#restauration {
+    margin: 50px auto;
+}
+
+#restauration-techniques h1 {
+    font-family: "Rochester", "Lobster Two", cursive;
+    font-size: 60px;
+    margin: 60px auto 30px;
+    text-align: center;
+}
+
+#restauration-techniques p {
+    text-align: center;
+}
+
+.restauration-pics-container {
+    margin: 30px auto;
+}
+
+.restauration-pic {
+    max-height: 250px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: #D6D5D5 1px 1px 6px;
+}
+
+#infos-pratiques {
+    margin: 10px auto 50px;
+}
+
+#infos-horaires {
+    margin: 50px 0 30px;
+}
+
+#google-map {
+    height: 400px;
+    /*margin-bottom: 30px;*/
+}
+
+#infos-atelier {
+    margin-bottom: 0;
+}
+
+#infos-atelier h1 {
+    font-family: "Rochester", "Lobster Two", cursive;
+    font-size: 60px;
+    margin: 60px auto 30px;
+    text-align: center;
+}

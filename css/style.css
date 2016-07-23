@@ -141,6 +141,18 @@ a:active {
     margin: 50px auto;
 }
 
+.owl-carousel {
+    margin: 60px auto 0;
+    display: inline-block;
+    height: 400px;
+}
+
+.carousel-item > img {
+    display: block;
+    max-height: 300px;
+    vertical-align: middle;
+}
+
 #restauration-techniques h1 {
     font-family: "Rochester", "Lobster Two", cursive;
     font-size: 60px;

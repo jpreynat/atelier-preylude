@@ -6,7 +6,7 @@ body {
     min-height: 100%;
     font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
-    background-color: #FEFEFE;
+    background-color: #fffffa;
 }
 
 a:hover,
@@ -16,40 +16,22 @@ a:active {
 }
 
 .theme-color {
-    color: #9D5D5F;
+    color: #a2195b;
 }
 
 #page-container {
-    background-color: #FEFEFE;
+    background-color: #fffffa;
 }
 
 #logo {
     max-height: 200px;
     max-width: 100%;
-    margin-bottom: -75px;
     position: relative;
-    left: -35px;
-    z-index: 1000;
-}
-
-#home-title {
-    font-family: "Lobster Two", "Alex Brush", cursive;
-    font-size: 600%;
-    /*color: #B15E5E;*/
-    /*color: #B67373;*/
-    color: #9D5E5E;
-    line-height: 0.5;
-    margin: 40px auto 30px;
-}
-
-#navbar-container > div {
-    z-index: 9999;
 }
 
 #navbar {
-    margin-left: 60px;
-    /*margin-bottom: 25px;*/
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-size: 28px;
     font-weight: 300;
     color: #444444;
@@ -114,7 +96,6 @@ a:active {
 #home-devis {
     margin-top: 50px;
     font-size: 33px;
-    color: rgb(195, 107, 110);
 }
 
 #footer {
@@ -127,8 +108,12 @@ a:active {
 }
 
 .home-details h3 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Megrim", sans-serif;
     color: #282828;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .home-details p {

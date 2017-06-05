@@ -138,8 +138,10 @@ a:active {
     vertical-align: middle;
 }
 
-#restauration-techniques h1 {
-    font-family: "Rochester", "Lobster Two", cursive;
+#restauration-techniques h1,
+#infos-atelier h1 {
+    font-family: "Megrim", cursive;
+    font-weight: 600;
     font-size: 60px;
     margin: 60px auto 30px;
     text-align: center;
@@ -172,16 +174,8 @@ a:active {
 
 #google-map {
     height: 400px;
-    /*margin-bottom: 30px;*/
 }
 
 #infos-atelier {
     margin-bottom: 0;
-}
-
-#infos-atelier h1 {
-    font-family: "Rochester", "Lobster Two", cursive;
-    font-size: 60px;
-    margin: 60px auto 30px;
-    text-align: center;
 }

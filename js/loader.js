@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     // Get the container for main-content
     var container = $('#main-content'),
         initialPage = 'home',
@@ -34,20 +34,20 @@ $(document).ready(function () {
         };
 
     // Load home page
-    $.get('pages/' + initialPage + '.html', function (content) {
+    $.get('pages/' + initialPage + '.html', function(content) {
         container.html(content);
         loadedPages[initialPage] = content;
     });
 
     // Create a link for each navbar item to load pages
-    $('#navbar li').each(function (index) {
+    $('#navbar li').each(function(index) {
         var pageName = $(this).attr('data-link'),
             link = 'pages/' + pageName + '.html';
     // Add the click event listener on each element
-        $(this).on('click', function () {
+        $(this).on('click', function() {
             container.animate({
                 opacity: 0
-            }, 450, 'linear', function () {
+            }, 450, 'linear', function() {
 
                 if (loadedPages.hasOwnProperty(link)) {
                     container.html(loadedPages[link]);
@@ -60,7 +60,7 @@ $(document).ready(function () {
                     }, 450, 'linear');
                 }
                 else {
-                    $.get(link, function (content) {
+                    $.get(link, function(content) {
                         container.html(content);
                         loadedPages[link] = content;
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 
     // Handle google maps and carousel instanciation at page change
-    function dynamicHandler (pageName) {
+    function dynamicHandler(pageName) {
         if (pageName === 'infos') {
             map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
             markerAtelier.setMap(map);

@@ -40,8 +40,10 @@ $(document).ready(function() {
     // Create a link for each navbar item to load pages
     $('#navbar li').each(function(index) {
         var pageName = $(this).attr('data-link');
-    // Add the click event listener on each element
+
+        // Add the click event listener on each element
         $(this).on('click', function() {
+            // Load content
             loadPage(pageName);
         });
     });
@@ -54,6 +56,9 @@ $(document).ready(function() {
         container.animate({
             opacity: 0
         }, 450, 'linear', function() {
+            // Mark current menu as active
+            setNavLinkActive(pageName);
+
             // Get content from cache or AJAX
             return Promise.resolve()
             .then(function() {
@@ -95,6 +100,20 @@ $(document).ready(function() {
                     opacity: 1
                 }, 450, 'linear');
             });
+        });
+    }
+
+    // Set a nav link as active by name
+    function setNavLinkActive(
+        pageName
+    ) {
+        $('#navbar li').each(function(index) {
+            $(this).removeClass('active');
+
+            var dataLink = $(this).attr('data-link');
+            if (dataLink == pageName) {
+                $(this).addClass('active');
+            }
         });
     }
 

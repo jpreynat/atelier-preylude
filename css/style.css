@@ -50,7 +50,7 @@ a:active {
 
 #navbar ul li:last-child {
     border-right: none;
-    margin-right: none;
+    margin-right: 0;
 }
 
 #main-content {
